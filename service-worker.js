@@ -1,12 +1,12 @@
 const CACHE_NAME = 'to-do-pwa-cache-v1';
 const FILES_TO_CACHE = [
-    'PraisePWA',
-    'PraisePWA/index.html',
-    'PraisePWA/style.css',
-    'PraisePWA/app.js',
-    'PraisePWA/manifest.json',
-    'PraisePWA/icons/icon-128.png',
-    'PraisePWA/icons/icon-512.png'
+    '/PraisePWA/',
+    '/PraisePWA/index.html',
+    '/PraisePWA/style.css',
+    '/PraisePWA/app.js',
+    '/PraisePWA/manifest.json',
+    '/PraisePWA/icons/icon-128.png',
+    '/PraisePWA/icons/icon-512.png'
 ];
 self.addEventListener('install', (event) => {
     event.waitUntil(
@@ -20,3 +20,7 @@ self.addEventListener('fetch', (event) => {
             .then((response) => response || fetch(event.request))
     );
 });
+
+window.addEventListener('error', function (event) {
+    console.error('Error occurred: ', event.message);
+   });
