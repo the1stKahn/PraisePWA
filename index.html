@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4H121BT18"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-H4H121BT18');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#0078D7">
@@ -19,7 +28,7 @@
  <script>
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('service-worker.js', {
-            scope: '/YOUR-REPOSITORY-NAME/'
+            scope: 'PraisePWA'
         })
             .then(reg => console.log('Service Worker Registered'))
             .catch(err => console.error('Service Worker Error:', err));

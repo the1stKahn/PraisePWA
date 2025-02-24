@@ -1,12 +1,12 @@
 const CACHE_NAME = 'to-do-pwa-cache-v1';
 const FILES_TO_CACHE = [
-    '/YOUR-REPOSITORY-NAME/',
-    '/YOUR-REPOSITORY-NAME /index.html',
-    '/YOUR-REPOSITORY-NAME /style.css',
-    '/YOUR-REPOSITORY-NAME /app.js',
-    '/YOUR-REPOSITORY-NAME /manifest.json',
-    '/YOUR-REPOSITORY-NAME /icons/icon-128.png',
-    '/YOUR-REPOSITORY-NAME /icons/icon-512.png'
+    'PraisePWA',
+    'PraisePWA/index.html',
+    'PraisePWA/style.css',
+    'PraisePWA/app.js',
+    'PraisePWA/manifest.json',
+    'PraisePWA/icons/icon-128.png',
+    'PraisePWA/icons/icon-512.png'
 ];
 self.addEventListener('install', (event) => {
     event.waitUntil(
